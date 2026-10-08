@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Calculadora - Formulario</title>
+ 
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>calculadora</h2>
+
+        <form action="calcu.php" method="POST">
+            <div class="field">
+                <label for="a">Número A:</label>
+                <input type="number" step="any" name="a" id="a" required>
+            </div>
+
+            <div class="field">
+                <label for="operacion">operacion</label>
+                <select name="operacion" id="operacion" required>
+                    <option value="">operacion</option>
+                    <option value="sumar">Sumar </option>
+                    <option value="restar">Restar</option>
+                    <option value="multiplicar">Multiplicar</option>
+                    <option value="dividir">Dividir </option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="b">Número B:</label>
+                <input type="number" step="any" name="b" id="b" required>
+            </div>
+
+            <button type="submit">Calcular</button>
+        </form>
+    </div>
+
+</body>
+</html>
+</html>
